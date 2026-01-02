@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import { partners, productCategories, valueCards, bannerEb2b, footerStatsEb2b
-  , productCards
+  , productCards, Bats, companyProfile, productDetails, statsSection, softwareReports,softwareCards
  } from "./init/data.js";
 
 const app = express();
@@ -45,7 +45,7 @@ app.get("/api/footerStatsEb2b", (req, res) => {
 
 app.get("/api/footerFlags", (req, res) => {
   res.status(200).json({
-    showFooterStats: false,
+    showFooterStats: true,
   });
 });
 
@@ -56,6 +56,66 @@ app.get("/api/productCards", (req, res) => {
 app.get("/api/productCardsFlags", (req, res) => {
   res.status(200).json({
     showProductCards: true,
+  });
+});
+
+app.get("/api/Bats", (req, res) => {
+  res.json(Bats);
+});
+
+app.get("/api/BatsFlags", (req, res) => {
+  res.status(200).json({
+    showBats: true,
+  });
+});
+
+app.get("/api/companyProfile", (req, res) => {
+  res.json(companyProfile);
+});
+
+app.get("/api/companyProfileFlags", (req, res) => {
+  res.status(200).json({
+    showCompanyProfile: true,  
+  });
+});
+
+app.get("/api/productDetails", (req, res) => {
+  res.json(productDetails);
+});
+
+app.get("/api/productDetailsFlags", (req, res) => {
+  res.status(200).json({
+    showProductDetails: true,  
+  });
+});
+
+app.get("/api/statsSection", (req, res) => {
+  res.json(statsSection);
+});
+
+app.get("/api/statsSectionFlags", (req, res) => {
+  res.status(200).json({
+    showStatsSection: true, 
+  });
+});
+
+app.get("/api/softwareReports", (req, res) => {
+  res.json(softwareReports);
+});
+
+app.get("/api/softwareReportsFlags", (req, res) => {
+  res.status(200).json({
+    showSoftwareReports: true,  
+  });
+});
+
+app.get("/api/softwareCards", (req, res) => {
+  res.json(softwareCards);
+});
+
+app.get("/api/softwareCardsFlags", (req, res) => {
+  res.status(200).json({
+    showSoftwareCards: true, 
   });
 });
 

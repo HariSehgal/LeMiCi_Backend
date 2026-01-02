@@ -1,4 +1,5 @@
 export const IMAGEKIT_BASE_URL = "https://ik.imagekit.io/lemiciiq/LeMiCi/eB2BImages";
+export const IMAGEKIT_BASE_URL2 = "https://ik.imagekit.io/lemiciiq/LeMiCi/SoftwareHuntImages";
 
 export const partners = [
   {
@@ -262,7 +263,7 @@ export const Bats = [
   {
     id: 4,
     itemName: 'Himachal Willow',
-    price: 999,
+    price: 999, 
     reviews: '(7K reviews)',
     manufacturer: 'Dadu India',
     image: `${IMAGEKIT_BASE_URL}/productCards/Bat5.png`,
@@ -290,6 +291,267 @@ export const Bats = [
     reviews: '(1K reviews)',
     manufacturer: 'Dsp Enterprises',
     image: `${IMAGEKIT_BASE_URL}/productCards/Bat8.png`,
+  },
+];
+
+export const companyProfile = {
+  company: {
+    name: "MRF",
+    isVerified: true,
+    description: "MRF (Madras Rubber Factory) is one of India's leading tyre manufacturing companies, known for producing high-quality tyres for cars, bikes, trucks, and more. Founded in 1946, it has grown into a global brand with a strong presence in motorsports. MRF is also involved in paints, toys (Funskool), and sports gear. It is widely trusted for performance, durability, and innovation.",
+    location: "Chennai, T.N, India",
+    establishedYear: "1989",
+    rating: 4.9,
+    foundedYear: "1946",
+    isTrustedSeller: true,
+    socialMedia: {
+      youtube: "https://youtube.com/mrf",
+      facebook: "https://facebook.com/mrf",
+      instagram: "https://instagram.com/mrf",
+      twitter: "https://twitter.com/mrf",
+      pinterest: "https://pinterest.com/mrf"
+    }
+  },
+  consultant: {
+    name: "Natasha Romanoff",
+    isVerified: true,
+    bio: "Hi I'm Consultant helping you make smarter, strategic decisions for lasting success.",
+    image: "/hari/eB2BImages/images/cardPerson.jpg",
+    rating: 4.7,
+    experience: "Expert",
+    rate: "Free"
+  }
+};
+
+export const productDetails = {
+  productInfo: {
+    modelNumber: "Cricket bats-469P",
+    brandName: "MRF",
+    origin: "Tamil Nadu, India",
+    smallOrders: "Accepted"
+  },
+  shippingInfo: {
+    fobPort: "Xiamen",
+    weightPerUnit: "200.0 g",
+    htsCode: "1111.11.1111",
+    cartonDimensions: "0.6x0.9x0.7 cm",
+    leadTime: "15-25 days"
+  },
+  certification: [
+    {
+      question: "Product generally confirming to 15 828 (1979), Latest",
+      answer: "No"
+    },
+    {
+      question: "Grade of Bat (As per the 15 828-1979, Latest)",
+      answer: "Not Applicable"
+    },
+    {
+      question: "Product confirming to international/National federation requirements to International Cricket Council (ICC)",
+      answer: "No"
+    },
+    {
+      question: "Certification details from International/National federations like ICC i.e certification agency certificate",
+      answer: "N.A."
+    },
+    {
+      question: "Date upto which certification is Valid",
+      answer: "N.A."
+    }
+  ],
+  paymentMethods: [
+    {
+      name: "Stripe",
+      icon: "FaCcStripe",
+      enabled: true
+    },
+    {
+      name: "PayPal",
+      icon: "FaPaypal",
+      enabled: true
+    }
+  ]
+};
+
+export const statsSection = [
+  {
+    value: "2.5M+",
+    label: "User reviews",
+    bg: "bg-[#E7FFEF]", 
+    iconBg: "bg-[#05A454]",
+    icon: "FaRegUserCircle"
+  },
+  {
+    value: "45,000+",
+    label: "Software Solution",
+    bg: "bg-[#EEF0FF]", 
+    iconBg: "bg-[#3C4BFF]",
+    icon: "BsDatabase"
+  },
+  {
+    value: "1000+",
+    label: "Software Type",
+    bg: "bg-[#FFE9F4]", 
+    iconBg: "bg-[#FF4BB6]",
+    icon: "HiOutlineChartBarSquare"
+  },
+];
+
+export const softwareReports = [
+  {
+    id: 1,
+    logo: `${IMAGEKIT_BASE_URL2}/successAI.jpg`,
+    name: "Success.ai",
+    rating: 5,
+    description: "Success.ai | B2B Company & Company Data -28M Verified | Company Profiles Global | Best Price Guarantee & 99% Data Accuracy",
+    location: "UK,USA,Germany",
+  },
+  {
+    id: 2,
+    logo: `${IMAGEKIT_BASE_URL2}/salutary.jpg`,
+    name: "Salutary Data",
+    rating: 5,
+    description: "Company Data | 6.7M+ Total Companies | Company Name, Industry, Employees, Revenue, Website, Address +More",
+    location: "Lexington, USA",
+  },
+  {
+    id: 3,
+    logo: `${IMAGEKIT_BASE_URL2}/coreSignal.jpg`,
+    name: "CoreSignal",
+    rating: 5,
+    description: "Coresignal | Company Data| Firmographic Data | Global 120M+ Records | Largest Professional Network | +9 Other Sources",
+    location: "UK,USA,Germany",
+  },
+  {
+    id: 4,
+    logo: `${IMAGEKIT_BASE_URL2}/successAI.jpg`,
+    name: "Success.ai",
+    rating: 5,
+    description: "Success.ai | B2B Company & Company Data -28M Verified | Company Profiles Global | Best Price Guarantee & 99% Data Accuracy",
+    location: "UK,USA,Germany",
+  },
+];
+
+export const softwareCards = [
+  {
+    id: 1,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Bitrix24",
+    location: "B2B, United Kingdom",
+    desc: "Bitrix24 is an all-in-one online workspace that integrates CRM, project management...",
+    tags: ["HR", "Ed Tech", "+3"],
+    rating: 4,
+    reviews: "260k",
+  },
+  {
+    id: 2,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Salesforce",
+    location: "B2B, USA",
+    desc: "Salesforce is the world's #1 CRM platform, helping businesses connect with customers...",
+    tags: ["CRM", "Sales", "+5"],
+    rating: 5,
+    reviews: "1.2M",
+  },
+  {
+    id: 3,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "HubSpot",
+    location: "B2B, USA",
+    desc: "HubSpot offers marketing, sales, and service software to help businesses grow better...",
+    tags: ["Marketing", "Sales", "+4"],
+    rating: 5,
+    reviews: "850k",
+  },
+  {
+    id: 4,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Slack",
+    location: "B2B, USA",
+    desc: "Slack is a collaboration hub that brings teams together, connecting people, information...",
+    tags: ["Communication", "Productivity"],
+    rating: 4,
+    reviews: "500k",
+  },
+  {
+    id: 5,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Zoom",
+    location: "B2B, USA",
+    desc: "Zoom is a video conferencing platform for virtual meetings, webinars, and collaboration...",
+    tags: ["Video", "Communication", "+2"],
+    rating: 5,
+    reviews: "2.3M",
+  },
+  {
+    id: 6,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Asana",
+    location: "B2B, USA",
+    desc: "Asana is a work management platform to organize, track, and manage team projects...",
+    tags: ["Project Mgmt", "Collaboration"],
+    rating: 4,
+    reviews: "380k",
+  },
+  {
+    id: 7,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Monday.com",
+    location: "B2B, Israel",
+    desc: "Monday.com is a Work OS that powers teams to run projects and workflows with confidence...",
+    tags: ["Workflow", "Productivity", "+2"],
+    rating: 5,
+    reviews: "620k",
+  },
+  {
+    id: 8,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Trello",
+    location: "B2B, USA",
+    desc: "Trello is a visual collaboration tool that creates a shared perspective on any project...",
+    tags: ["Kanban", "Project Mgmt"],
+    rating: 4,
+    reviews: "450k",
+  },
+  {
+    id: 9,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Notion",
+    location: "B2B, USA",
+    desc: "Notion is an all-in-one workspace for notes, tasks, wikis, and databases...",
+    tags: ["Notes", "Wiki", "+3"],
+    rating: 5,
+    reviews: "920k",
+  },
+  {
+    id: 10,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Dropbox",
+    location: "B2B, USA",
+    desc: "Dropbox is a cloud storage platform that keeps your files safe, synced, and easy to share...",
+    tags: ["Storage", "Cloud", "+1"],
+    rating: 4,
+    reviews: "710k",
+  },
+  {
+    id: 11,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Google Workspace",
+    location: "B2B, USA",
+    desc: "Google Workspace is a suite of cloud computing, productivity and collaboration tools...",
+    tags: ["Email", "Productivity", "+4"],
+    rating: 5,
+    reviews: "3.1M",
+  },
+  {
+    id: 12,
+    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    name: "Microsoft Teams",
+    location: "B2B, USA",
+    desc: "Microsoft Teams is a collaboration platform that combines workplace chat, meetings, and files...",
+    tags: ["Communication", "Microsoft", "+2"],
+    rating: 4,
+    reviews: "1.8M",
   },
 ];
 
