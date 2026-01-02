@@ -5,7 +5,7 @@ import { partners, productCategories, valueCards, bannerEb2b, footerStatsEb2b
  } from "./init/data.js";
 
 const app = express();
-app.use(cors("*"));
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("API is running")
@@ -119,7 +119,7 @@ app.get("/api/softwareCardsFlags", (req, res) => {
   });
 });
 
-const PORT = 5000
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
-})
+});
