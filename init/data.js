@@ -1,64 +1,24 @@
-export const IMAGEKIT_BASE_URL = "https://ik.imagekit.io/lemiciiq/LeMiCi/eB2BImages";
-export const IMAGEKIT_BASE_URL2 = "https://ik.imagekit.io/lemiciiq/LeMiCi/SoftwareHuntImages";
+export const IMAGEKIT_BASE_URL = "https://ik.imagekit.io/lemiciiq/LeMiCi";
+
+const getEb2bPath = (path) => `${IMAGEKIT_BASE_URL}/eB2BImages${path}`;
+const getSoftwarePath = (path) => `${IMAGEKIT_BASE_URL}/SoftwareHuntImages${path}`;
 
 export const partners = [
-  {
-    name: "Adobe",
-    image: `${IMAGEKIT_BASE_URL}/sponsors/Adobe.png`,
-  },
-  {
-    name: "TradeIndia",
-    image: `${IMAGEKIT_BASE_URL}/sponsors/TradeIndia.png`,
-  },
-  {
-    name: "IBM",
-    image: `${IMAGEKIT_BASE_URL}/sponsors/IBM.png`,
-  },
-  {
-    name: "IndiaMart",
-    image: `${IMAGEKIT_BASE_URL}/sponsors/IndiaMart.png`,
-  },
-  {
-    name: "Amazon",
-    image: `${IMAGEKIT_BASE_URL}/sponsors/Amazon.png`,
-  },
-  {
-    name: "Alibaba",
-    image: `${IMAGEKIT_BASE_URL}/sponsors/Alibaba.png`,
-  },
-  {
-    name: "Intel",
-    image: `${IMAGEKIT_BASE_URL}/sponsors/Intel.png`,
-  },
-  {
-    name: "FedEx",
-    image: `${IMAGEKIT_BASE_URL}/sponsors/FedEx.png`,
-  },
-  {
-    name: "Oracle",
-    image: `${IMAGEKIT_BASE_URL}/sponsors/Oracle.png`,
-  },
+  { name: "Adobe", image: getEb2bPath("/sponsors/Adobe.png") },
+  { name: "TradeIndia", image: getEb2bPath("/sponsors/TradeIndia.png") },
+  { name: "IBM", image: getEb2bPath("/sponsors/IBM.png") },
+  { name: "IndiaMart", image: getEb2bPath("/sponsors/IndiaMart.png") },
+  { name: "Amazon", image: getEb2bPath("/sponsors/Amazon.png") },
+  { name: "Alibaba", image: getEb2bPath("/sponsors/Alibaba.png") },
+  { name: "Intel", image: getEb2bPath("/sponsors/Intel.png") },
+  { name: "FedEx", image: getEb2bPath("/sponsors/FedEx.png") },
+  { name: "Oracle", image: getEb2bPath("/sponsors/Oracle.png") },
 ];
 
 export const bannerEb2b = [
-  {
-    name: "Happy",
-    value: "8,500+",
-    growth: "+25%",
-    icon: "FaRegUserCircle"
-  },
-  {
-    name: "Users",
-    value: "25K+",
-    growth: "+32%",
-    icon: "TbUserUp"
-  },
-  {
-    name: "Payslips",
-    value: "2.5M+",
-    growth: "+51%",
-    icon: "RiBillLine"
-  }
+  { name: "Happy", value: "8,500+", growth: "+25%", icon: "FaRegUserCircle" },
+  { name: "Users", value: "25K+", growth: "+32%", icon: "TbUserUp" },
+  { name: "Payslips", value: "2.5M+", growth: "+51%", icon: "RiBillLine" }
 ];
 
 export const productCategories = [
@@ -121,27 +81,10 @@ export const valueCards = [
 ];
 
 export const footerStatsEb2b = [
-  {
-    value: 200,
-    display: " M+",
-    label: "Products",
-  },
-  {
-    value: 200,
-    display: " K+",
-    label: "Supplies",
-    highlighted: true,
-  },
-  {
-    value: 5900,
-    display: "+",
-    label: "Products categories",
-  },
-  {
-    value: 200,
-    display: "+",
-    label: "Countries & Regions",
-  },
+  { value: 200, display: " M+", label: "Products" },
+  { value: 200, display: " K+", label: "Supplies", highlighted: true },
+  { value: 5900, display: "+", label: "Products categories" },
+  { value: 200, display: "+", label: "Countries & Regions" },
 ];
 
 export const productCards = [
@@ -151,9 +94,8 @@ export const productCards = [
     tagline: 'Showcasing portable',
     price: 18999,
     reviews: '(2K reviews)',
-    description:
-      'Demonstrate how fast and reliable your tent is. Show it in various environments — rain, wind, or sun.',
-    image: `${IMAGEKIT_BASE_URL}/productCards/campingTent.jpg`,
+    description: 'Demonstrate how fast and reliable your tent is. Show it in various environments — rain, wind, or sun.',
+    image: getEb2bPath('/productCards/campingTent.jpg'),
   },
   {
     id: 1,
@@ -161,9 +103,8 @@ export const productCards = [
     tagline: 'Gaming fan with lighting effects',
     price: 1999,
     reviews: '(11K reviews)',
-    description:
-      'Highlight airflow power, noise levels, and RGB lighting. Use dynamic visuals and cooling benchmarks.',
-    image: `${IMAGEKIT_BASE_URL}/productCards/gamingFan.jpg`,
+    description: 'Highlight airflow power, noise levels, and RGB lighting. Use dynamic visuals and cooling benchmarks.',
+    image: getEb2bPath('/productCards/gamingFan.jpg'),
   },
   {
     id: 2,
@@ -171,9 +112,8 @@ export const productCards = [
     tagline: 'Premium chess board showcase',
     price: 1199,
     reviews: '(6K reviews)',
-    description:
-      'Zoom into knight carvings, smooth board glides, and weighted bases. Tell the story behind craftsmanship.',
-    image: `${IMAGEKIT_BASE_URL}/productCards/chessBoard.jpg`,
+    description: 'Zoom into knight carvings, smooth board glides, and weighted bases. Tell the story behind craftsmanship.',
+    image: getEb2bPath('/productCards/chessBoard.jpg'),
   },
   {
     id: 3,
@@ -181,9 +121,8 @@ export const productCards = [
     tagline: 'Lightweight, durable football boots',
     price: 21999,
     reviews: '(107K reviews)',
-    description:
-      'Use slow-motion shots to highlight cutting, turning, and sprinting — built for pro-level play.',
-    image: `${IMAGEKIT_BASE_URL}/productCards/shoes.jpg`,
+    description: 'Use slow-motion shots to highlight cutting, turning, and sprinting — built for pro-level play.',
+    image: getEb2bPath('/productCards/shoes.jpg'),
   },
   {
     id: 4,
@@ -191,9 +130,8 @@ export const productCards = [
     tagline: 'English willow',
     price: 24999,
     reviews: '(203K reviews)',
-    description:
-      "Highlight the bat's sweet spot, stroke power, and grip with slow-motion shots.",
-    image: `${IMAGEKIT_BASE_URL}/productCards/cricketBat.png`,
+    description: "Highlight the bat's sweet spot, stroke power, and grip with slow-motion shots.",
+    image: getEb2bPath('/productCards/cricketBat.png'),
   },
   {
     id: 5,
@@ -201,9 +139,8 @@ export const productCards = [
     tagline: 'Weatherproof cricket ball display',
     price: 599,
     reviews: '(35K reviews)',
-    description:
-      'Show bounce, grip, and seam control under various surfaces.',
-    image: `${IMAGEKIT_BASE_URL}/productCards/syntheticBall.png`,
+    description: 'Show bounce, grip, and seam control under various surfaces.',
+    image: getEb2bPath('/productCards/syntheticBall.png'),
   },
   {
     id: 6,
@@ -211,9 +148,8 @@ export const productCards = [
     tagline: 'Premium yoga gear showcase',
     price: 8999,
     reviews: '(72K reviews)',
-    description:
-      'Demonstrate stretch, grip, and posture support using real-time practice sessions.',
-    image: `${IMAGEKIT_BASE_URL}/productCards/yogaEquipment.jpg`,
+    description: 'Demonstrate stretch, grip, and posture support using real-time practice sessions.',
+    image: getEb2bPath('/productCards/yogaEquipment.jpg'),
   },
   {
     id: 7,
@@ -221,11 +157,26 @@ export const productCards = [
     tagline: 'Karate gear and uniform showcase',
     price: 11999,
     reviews: '(3K reviews)',
-    description:
-      'Display the durability and comfort of karate uniform, gloves, and pads in training action.',
-    image: `${IMAGEKIT_BASE_URL}/productCards/karateEquipment.jpg`,
+    description: 'Display the durability and comfort of karate uniform, gloves, and pads in training action.',
+    image: getEb2bPath('/productCards/karateEquipment.jpg'),
   },
 ];
+
+export const supplierData = {
+  name: "Jet Tech Private Limited",
+  description: "Jet Tech Pvt. Ltd. is a leading manufacturer and exporter of bulk packaging materials and industrial textiles.",
+  isVerified: true,
+  location: "Vadodara, Gujarat",
+  businessType: "B2B",
+  establishedYear: "1989",
+  followers: "98.9K",
+  products: "100+",
+  images: {
+    main: getEb2bPath("/products/HandBag1.png"),
+    small1: getEb2bPath("/products/HandBag2.png"),
+    small2: getEb2bPath("/products/HandBag3.png")
+  }
+};
 
 export const Bats = [
   {
@@ -234,7 +185,7 @@ export const Bats = [
     price: 21999,
     reviews: '(103K reviews)',
     manufacturer: 'Madras Rubber Factory',
-    image: `${IMAGEKIT_BASE_URL}/productCards/Bat1.jpg`,
+    image: getEb2bPath('/productCards/Bat1.jpg'),
   },
   {
     id: 1,
@@ -242,7 +193,7 @@ export const Bats = [
     price: 999,
     reviews: '(81K reviews)',
     manufacturer: 'Dsp Enterprises',
-    image: `${IMAGEKIT_BASE_URL}/productCards/Bat2.png`,
+    image: getEb2bPath('/productCards/Bat2.png'),
   },
   {
     id: 2,
@@ -250,7 +201,7 @@ export const Bats = [
     price: 999,
     reviews: '(17K reviews)',
     manufacturer: 'Dsp Enterprises',
-    image: `${IMAGEKIT_BASE_URL}/productCards/Bat3.jpg`,
+    image: getEb2bPath('/productCards/Bat3.jpg'),
   },
   {
     id: 3,
@@ -258,15 +209,15 @@ export const Bats = [
     price: 999,
     reviews: '(7K reviews)',
     manufacturer: 'Kavya Overseas',
-    image: `${IMAGEKIT_BASE_URL}/productCards/Bat4.jpg`,
+    image: getEb2bPath('/productCards/Bat4.jpg'),
   },
   {
     id: 4,
     itemName: 'Himachal Willow',
-    price: 999, 
+    price: 999,
     reviews: '(7K reviews)',
     manufacturer: 'Dadu India',
-    image: `${IMAGEKIT_BASE_URL}/productCards/Bat5.png`,
+    image: getEb2bPath('/productCards/Bat5.png'),
   },
   {
     id: 5,
@@ -274,7 +225,7 @@ export const Bats = [
     price: 999,
     reviews: '(5K reviews)',
     manufacturer: 'Vinex Enterprises Pvt. Ltd.',
-    image: `${IMAGEKIT_BASE_URL}/productCards/Bat6.png`,
+    image: getEb2bPath('/productCards/Bat6.png'),
   },
   {
     id: 6,
@@ -282,7 +233,7 @@ export const Bats = [
     price: 999,
     reviews: '(5K reviews)',
     manufacturer: 'Mittal Industries',
-    image: `${IMAGEKIT_BASE_URL}/productCards/Bat7.jpg`,
+    image: getEb2bPath('/productCards/Bat7.jpg'),
   },
   {
     id: 7,
@@ -290,7 +241,7 @@ export const Bats = [
     price: 999,
     reviews: '(1K reviews)',
     manufacturer: 'Dsp Enterprises',
-    image: `${IMAGEKIT_BASE_URL}/productCards/Bat8.png`,
+    image: getEb2bPath('/productCards/Bat8.png'),
   },
 ];
 
@@ -316,7 +267,7 @@ export const companyProfile = {
     name: "Natasha Romanoff",
     isVerified: true,
     bio: "Hi I'm Consultant helping you make smarter, strategic decisions for lasting success.",
-    image: "/hari/eB2BImages/images/cardPerson.jpg",
+    image: getEb2bPath("/images/cardPerson.jpg"),
     rating: 4.7,
     experience: "Expert",
     rate: "Free"
@@ -360,16 +311,8 @@ export const productDetails = {
     }
   ],
   paymentMethods: [
-    {
-      name: "Stripe",
-      icon: "FaCcStripe",
-      enabled: true
-    },
-    {
-      name: "PayPal",
-      icon: "FaPaypal",
-      enabled: true
-    }
+    { name: "Stripe", icon: "FaCcStripe", enabled: true },
+    { name: "PayPal", icon: "FaPaypal", enabled: true }
   ]
 };
 
@@ -377,21 +320,21 @@ export const statsSection = [
   {
     value: "2.5M+",
     label: "User reviews",
-    bg: "bg-[#E7FFEF]", 
+    bg: "bg-[#E7FFEF]",
     iconBg: "bg-[#05A454]",
     icon: "FaRegUserCircle"
   },
   {
     value: "45,000+",
     label: "Software Solution",
-    bg: "bg-[#EEF0FF]", 
+    bg: "bg-[#EEF0FF]",
     iconBg: "bg-[#3C4BFF]",
     icon: "BsDatabase"
   },
   {
     value: "1000+",
     label: "Software Type",
-    bg: "bg-[#FFE9F4]", 
+    bg: "bg-[#FFE9F4]",
     iconBg: "bg-[#FF4BB6]",
     icon: "HiOutlineChartBarSquare"
   },
@@ -400,7 +343,7 @@ export const statsSection = [
 export const softwareReports = [
   {
     id: 1,
-    logo: `${IMAGEKIT_BASE_URL2}/successAI.jpg`,
+    logo: getSoftwarePath('/successAI.jpg'),
     name: "Success.ai",
     rating: 5,
     description: "Success.ai | B2B Company & Company Data -28M Verified | Company Profiles Global | Best Price Guarantee & 99% Data Accuracy",
@@ -408,7 +351,7 @@ export const softwareReports = [
   },
   {
     id: 2,
-    logo: `${IMAGEKIT_BASE_URL2}/salutary.jpg`,
+    logo: getSoftwarePath('/salutary.jpg'),
     name: "Salutary Data",
     rating: 5,
     description: "Company Data | 6.7M+ Total Companies | Company Name, Industry, Employees, Revenue, Website, Address +More",
@@ -416,7 +359,7 @@ export const softwareReports = [
   },
   {
     id: 3,
-    logo: `${IMAGEKIT_BASE_URL2}/coreSignal.jpg`,
+    logo: getSoftwarePath('/coreSignal.jpg'),
     name: "CoreSignal",
     rating: 5,
     description: "Coresignal | Company Data| Firmographic Data | Global 120M+ Records | Largest Professional Network | +9 Other Sources",
@@ -424,7 +367,7 @@ export const softwareReports = [
   },
   {
     id: 4,
-    logo: `${IMAGEKIT_BASE_URL2}/successAI.jpg`,
+    logo: getSoftwarePath('/successAI.jpg'),
     name: "Success.ai",
     rating: 5,
     description: "Success.ai | B2B Company & Company Data -28M Verified | Company Profiles Global | Best Price Guarantee & 99% Data Accuracy",
@@ -435,7 +378,7 @@ export const softwareReports = [
 export const softwareCards = [
   {
     id: 1,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Bitrix24",
     location: "B2B, United Kingdom",
     desc: "Bitrix24 is an all-in-one online workspace that integrates CRM, project management...",
@@ -445,7 +388,7 @@ export const softwareCards = [
   },
   {
     id: 2,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Salesforce",
     location: "B2B, USA",
     desc: "Salesforce is the world's #1 CRM platform, helping businesses connect with customers...",
@@ -455,7 +398,7 @@ export const softwareCards = [
   },
   {
     id: 3,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "HubSpot",
     location: "B2B, USA",
     desc: "HubSpot offers marketing, sales, and service software to help businesses grow better...",
@@ -465,7 +408,7 @@ export const softwareCards = [
   },
   {
     id: 4,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Slack",
     location: "B2B, USA",
     desc: "Slack is a collaboration hub that brings teams together, connecting people, information...",
@@ -475,7 +418,7 @@ export const softwareCards = [
   },
   {
     id: 5,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Zoom",
     location: "B2B, USA",
     desc: "Zoom is a video conferencing platform for virtual meetings, webinars, and collaboration...",
@@ -485,7 +428,7 @@ export const softwareCards = [
   },
   {
     id: 6,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Asana",
     location: "B2B, USA",
     desc: "Asana is a work management platform to organize, track, and manage team projects...",
@@ -495,7 +438,7 @@ export const softwareCards = [
   },
   {
     id: 7,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Monday.com",
     location: "B2B, Israel",
     desc: "Monday.com is a Work OS that powers teams to run projects and workflows with confidence...",
@@ -505,7 +448,7 @@ export const softwareCards = [
   },
   {
     id: 8,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Trello",
     location: "B2B, USA",
     desc: "Trello is a visual collaboration tool that creates a shared perspective on any project...",
@@ -515,7 +458,7 @@ export const softwareCards = [
   },
   {
     id: 9,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Notion",
     location: "B2B, USA",
     desc: "Notion is an all-in-one workspace for notes, tasks, wikis, and databases...",
@@ -525,7 +468,7 @@ export const softwareCards = [
   },
   {
     id: 10,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Dropbox",
     location: "B2B, USA",
     desc: "Dropbox is a cloud storage platform that keeps your files safe, synced, and easy to share...",
@@ -535,7 +478,7 @@ export const softwareCards = [
   },
   {
     id: 11,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Google Workspace",
     location: "B2B, USA",
     desc: "Google Workspace is a suite of cloud computing, productivity and collaboration tools...",
@@ -545,7 +488,7 @@ export const softwareCards = [
   },
   {
     id: 12,
-    logo: `${IMAGEKIT_BASE_URL2}/bitrix.jpg`,
+    logo: getSoftwarePath('/bitrix.jpg'),
     name: "Microsoft Teams",
     location: "B2B, USA",
     desc: "Microsoft Teams is a collaboration platform that combines workplace chat, meetings, and files...",
