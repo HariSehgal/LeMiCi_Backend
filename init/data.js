@@ -2,6 +2,7 @@ export const IMAGEKIT_BASE_URL = "https://ik.imagekit.io/lemiciiq/LeMiCi";
 
 const getEb2bPath = (path) => `${IMAGEKIT_BASE_URL}/eB2BImages${path}`;
 const getSoftwarePath = (path) => `${IMAGEKIT_BASE_URL}/SoftwareHuntImages${path}`;
+const getAssociationPath = (path) => `${IMAGEKIT_BASE_URL}/AssociationImages${path}`;
 
 export const partners = [
   { name: "Adobe", image: getEb2bPath("/sponsors/Adobe.png") },
@@ -560,3 +561,306 @@ export const softwareCards = [
   },
 ];
 
+export const featuredAssociations = [
+  {
+    id: 1,
+    title: "Tech Business Alliance",
+    description: "Leading association for technology companies, startups, and innovators fostering collaboration and growth.",
+    img: getAssociationPath("/association1.jpg"),
+    members: "2,450",
+    events: "48",
+    rating: "4.9",
+  },
+  {
+    id: 2,
+    title: "Finance Council",
+    description: "Premier network for financial professionals, banks, and investment firms driving standards.",
+    img: getAssociationPath("/association2.jpg"),
+    members: "1,820",
+    events: "36",
+    rating: "4.8",
+  },
+  {
+    id: 3,
+    title: "Healthcare Innovators",
+    description: "Connecting healthcare providers, researchers, and medical technology companies.",
+    img: getAssociationPath("/association3.jpg"),
+    members: "3,150",
+    events: "52",
+    rating: "4.9",
+  },
+];
+
+export const footerStatsFeatAssoc = [
+  { 
+    id: 1,
+    value: 4000, 
+    display: '+', 
+    label: 'Businesses',
+    highlighted: false
+  },
+  { 
+    id: 2,
+    value: 200, 
+    display: ' M+', 
+    label: 'Products', 
+    highlighted: true 
+  },
+  { 
+    id: 3,
+    value: 5900, 
+    display: '+', 
+    label: 'Product Categories',
+    highlighted: false
+  },
+  { 
+    id: 4,
+    value: 200, 
+    display: '+', 
+    label: 'Countries & Region',
+    highlighted: false
+  },
+];
+
+export const associationCards = [
+  {
+    id: 1,
+    logo: getAssociationPath("/AIGMF.png"),
+    name: "All India Glass Federation",
+    location: "Delhi, India",
+    desc: "Represents all segments of India's glass industry, from large to small manufacturers.",
+    tags: ["Manufacturing", "Glass", "Government"],
+    rating: 4,
+    reviews: "200k",
+  },
+  {
+    id: 2,
+    logo: getAssociationPath("/Alliance.png"),
+    name: "Tech Business Alliance",
+    location: "Delhi, India",
+    desc: "Drives collaboration and growth for tech companies, startups, and innovators.",
+    tags: ["Technology", "Innovation", "Startups"],
+    rating: 4,
+    reviews: "200k",
+  },
+  {
+    id: 3,
+    logo: getAssociationPath("/Finance.jpg"),
+    name: "Finance Council of India",
+    location: "Delhi, India",
+    desc: "Connects financial professionals to uphold industry standards and compliance.",
+    tags: ["Finance", "Banking", "Investment"],
+    rating: 4,
+    reviews: "200k",
+  },
+];
+
+export const impactSection = {
+  backgroundImage: getAssociationPath("/ImpactBanner.jpg"),
+  subtitle: "A Small Business Authority",
+  title: "Serves Indian Businesses To",
+  highlight: "Engage, Enable, Elevate & Excel",
+  description: "Helping industry in India to be trusted around the world.",
+  stats: [
+    {
+      id: 1,
+      value: "3.6M",
+      label: "Businesses Engaged Annually"
+    },
+    {
+      id: 2,
+      value: "6.3M",
+      label: "MSMEs India"
+    },
+    {
+      id: 3,
+      value: "1,500+",
+      label: "Enablers Partnered"
+    },
+    {
+      id: 4,
+      value: "1200+",
+      label: "Live Events Annually"
+    }
+  ]
+};
+
+export const stateSection = {
+  searchPlaceholder: "Search state...",
+  totalStates: "50+ States & Union Territories",
+  state: {
+    name: "Andhra Pradesh",
+    subtitle: "Business Ecosystem Overview",
+    image: getAssociationPath("/andhra-pradesh.png"),
+    stats: [
+      {
+        id: 1,
+        value: "15+",
+        label: "Projects Completed"
+      },
+      {
+        id: 2,
+        value: "20+",
+        label: "Business Consultants"
+      }
+    ],
+    description: "Andhra Pradesh is the second largest producer of cotton and raw silk in India. The state has a strong textile industry base consisting of handlooms, handicrafts, spinning and processing units. The state has integrated apparel city in Vizag with an innovative concept of \"Fibre to Store\".",
+    bottomBar: [
+      {
+        id: 1,
+        icon: "Factory",
+        title: "Key Industries",
+        description: "Textiles, IT, Pharmaceuticals, Agriculture"
+      },
+      {
+        id: 2,
+        icon: "Users",
+        title: "Major Associations",
+        description: "FAPCCI, APTIC, Textile Alliance"
+      },
+      {
+        id: 3,
+        icon: "TrendingUp",
+        title: "Business Growth",
+        description: "18% YoY in manufacturing sector"
+      }
+    ],
+    highlights: [
+      {
+        id: 1,
+        icon: "Lightbulb",
+        title: "Innovation Hubs",
+        description: "Multiple innovation centers and incubators supporting startups and SMEs with mentorship, funding, and infrastructure."
+      },
+      {
+        id: 2,
+        icon: "Rocket",
+        title: "Startup Ecosystem",
+        description: "Growing startup community with government support, angel investors, and venture capital presence."
+      },
+      {
+        id: 3,
+        icon: "GraduationCap",
+        title: "Skill Development",
+        description: "Strong focus on vocational training and skill development programs aligned with industry needs."
+      },
+      {
+        id: 4,
+        icon: "Building",
+        title: "Infrastructure",
+        description: "Well-developed industrial parks, SEZs, ports, and connectivity through road, rail, and air networks."
+      }
+    ]
+  }
+};
+
+export const associationProfile = {
+  logo: getAssociationPath("/Alliance.png"),
+  name: "Tech Business Alliance",
+  isVerified: true,
+  tags: ["Technology", "Innovation", "Startups", "Digital Transformation"],
+  description: "Leading the future of technology innovation through collaboration, education, and advocacy. Join the premier association for tech entrepreneurs and innovators.",
+  rating: {
+    stars: 4.5,
+    likes: "107"
+  },
+  socialMedia: [
+    { id: 1, platform: "youtube", url: "#", color: "text-red-500" },
+    { id: 2, platform: "facebook", url: "#", color: "text-[#1877F2]" },
+    { id: 3, platform: "instagram", url: "#", color: "text-[#E4405F]" },
+    { id: 4, platform: "twitter", url: "#", color: "text-[#1DA1F2]" },
+    { id: 5, platform: "pinterest", url: "#", color: "text-[#E60023]" }
+  ]
+};
+
+export const aboutSection = {
+  stats: [
+    { 
+      id: 1, 
+      label: "Founded", 
+      value: "2010", 
+      icon: "BsCalendarDate" 
+    },
+    { 
+      id: 2, 
+      label: "Headquarters", 
+      value: "San Francisco, CA", 
+      icon: "GiModernCity" 
+    },
+    { 
+      id: 3, 
+      label: "Members", 
+      value: "2,450+ Companies", 
+      icon: "FaUsers" 
+    },
+    { 
+      id: 4, 
+      label: "Industry Focus", 
+      value: "Technology & Innovation", 
+      icon: "MdLightbulbOutline" 
+    },
+    { 
+      id: 5, 
+      label: "Geographic Reach", 
+      value: "Global", 
+      icon: "MdOutlinePublic" 
+    },
+    { 
+      id: 6, 
+      label: "Member Satisfaction", 
+      value: "96%", 
+      icon: "FaStar" 
+    }
+  ],
+  about: {
+    title: "About Tech Business Alliance",
+    subtitle: "Empowering technology businesses to thrive in a rapidly evolving digital landscape.",
+    description: "The Tech Business Alliance (TBA) is the premier association for technology companies, startups, and digital innovators. Founded in 2010, we have grown to become one of the most influential voices in the technology sector, representing over 2,450 member companies across the globe.",
+    image: getAssociationPath("/indAssoc1.jpg")
+  },
+  vision: {
+    title: "Our Vision",
+    description: "We envision a world where technology businesses of all sizes can thrive, innovate, and create positive impact. Through our programs, advocacy efforts, and community initiatives, we're building a sustainable and inclusive technology ecosystem that benefits everyone.",
+    whatWeDoTitle: "What We Do",
+    whatWeDoDescription: "We offer a comprehensive suite of services designed to support technology businesses at every stage of their journey. From early-stage startups to established enterprises, our members benefit from networking events, educational programs, policy advocacy, market intelligence, and strategic partnerships that drive growth and innovation.",
+    image: getAssociationPath("/indAssoc2.jpg")
+  }
+};
+
+export const eventsSection = {
+  tabs: [
+    { id: 1, label: "Upcoming Events & Programs", active: true },
+    { id: 2, label: "Leadership Team", active: false },
+    { id: 3, label: "What Our Members Say", active: false }
+  ],
+  subtitle: "Join us at our signature events and educational programs",
+  events: [
+    {
+      id: 1,
+      title: "Tech Innovation Summit 2025",
+      date: "December 15, 2025",
+      description: "Our flagship annual conference bringing together 1,000+ tech leaders to explore emerging technologies, share insights, and forge partnerships.",
+      attendees: "1,000+ Attendees",
+      location: "Virtual Event",
+      image: getAssociationPath("/UpcomingEvents1.jpg"),
+    },
+    {
+      id: 2,
+      title: "AI & Machine Learning Workshop",
+      date: "November 8, 2025",
+      description: "Hands-on workshop covering practical applications of AI and ML in business. Learn from industry experts and get certified.",
+      attendees: "500+ Attendees",
+      location: "New York, NY",
+      image: getAssociationPath("/UpcomingEvents2.jpg"),
+    },
+    {
+      id: 3,
+      title: "Startup Pitch Competition",
+      date: "November 22, 2025",
+      description: "Watch innovative startups pitch to top investors. Networking reception follows with opportunities to meet founders and VCs.",
+      attendees: "1,250+ Attendees",
+      location: "Austin, TX",
+      image: getAssociationPath("/UpcomingEvents3.jpg"),
+    },
+  ]
+};

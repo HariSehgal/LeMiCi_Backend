@@ -14,7 +14,15 @@ import {
   latestProducts,
   statsSection,
   softwareReports,
-  softwareCards
+  softwareCards,
+  featuredAssociations,
+  footerStatsFeatAssoc,
+  associationCards,
+  impactSection,
+  stateSection,
+  associationProfile,
+  aboutSection,
+  eventsSection
 } from "../init/data.js";
 
 const router = express.Router();
@@ -33,7 +41,15 @@ const featureFlags = {
   showLatestProducts: true,
   showStatsSection: true,
   showSoftwareReports: true,
-  showSoftwareCards: true
+  showSoftwareCards: true,
+  showFeaturedAssociations: true,
+  showFooterStatsFeatAssoc: true,
+  showAssociationCards: true,
+  showImpactSection: true,
+  showStateSection: true,
+  showAssociationProfile: true,
+  showAboutSection: true,
+  showEventsSection: true,
 };
 
 // ============ DATA ENDPOINTS ============
@@ -52,6 +68,14 @@ router.get("/latestProducts", (req, res) => res.json(latestProducts));
 router.get("/statsSection", (req, res) => res.json(statsSection));
 router.get("/softwareReports", (req, res) => res.json(softwareReports));
 router.get("/softwareCards", (req, res) => res.json(softwareCards));
+router.get("/featuredAssociations", (req, res) => res.json(featuredAssociations));
+router.get("/footerStatsFeatAssoc", (req, res) => res.json(footerStatsFeatAssoc));
+router.get("/associationCards", (req, res) => res.json(associationCards));
+router.get("/impactSection", (req, res) => res.json(impactSection));
+router.get("/stateSection", (req, res) => res.json(stateSection));
+router.get("/associationProfile", (req, res) => res.json(associationProfile));
+router.get("/aboutSection", (req, res) => res.json(aboutSection));
+router.get("/eventsSection", (req, res) => res.json(eventsSection));
 
 // ============ FLAG ENDPOINTS ============
 router.get("/bannerFlags", (req, res) => {
@@ -104,6 +128,38 @@ router.get("/softwareReportsFlags", (req, res) => {
 
 router.get("/softwareCardsFlags", (req, res) => {
   res.json({ showSoftwareCards: featureFlags.showSoftwareCards });
+});
+
+router.get("/featuredAssociationsFlags", (req, res) => {
+  res.json({ showFeaturedAssociations: featureFlags.showFeaturedAssociations });
+});
+
+router.get("/footerStatsFeatAssocFlags", (req, res) => {
+  res.json({ showFooterStatsFeatAssoc: featureFlags.showFooterStatsFeatAssoc });
+});
+
+router.get("/associationCardsFlags", (req, res) => {
+  res.json({ showAssociationCards: featureFlags.showAssociationCards });
+});
+
+router.get("/impactSectionFlags", (req, res) => {
+  res.json({ showImpactSection: featureFlags.showImpactSection });
+});
+
+router.get("/stateSectionFlags", (req, res) => {
+  res.json({ showStateSection: featureFlags.showStateSection });
+});
+
+router.get("/associationProfileFlags", (req, res) => {
+  res.json({ showAssociationProfile: featureFlags.showAssociationProfile });
+});
+
+router.get("/aboutSectionFlags", (req, res) => {
+  res.json({ showAboutSection: featureFlags.showAboutSection });
+});
+
+router.get("/eventsSectionFlags", (req, res) => {
+  res.json({ showEventsSection: featureFlags.showEventsSection });
 });
 
 export default router;
