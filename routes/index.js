@@ -8,8 +8,10 @@ import {
   productCards,
   supplierData,
   Bats,
+  recommendedSuppliers,
   companyProfile,
   productDetails,
+  latestProducts,
   statsSection,
   softwareReports,
   softwareCards
@@ -25,8 +27,10 @@ const featureFlags = {
   showProductCards: true,
   showSuplierData: true,
   showBats: true,
+  showRecommendedSuppliers: true,
   showCompanyProfile: true,
   showProductDetails: true,
+  showLatestProducts: true,
   showStatsSection: true,
   showSoftwareReports: true,
   showSoftwareCards: true
@@ -41,8 +45,10 @@ router.get("/footerStatsEb2b", (req, res) => res.json(footerStatsEb2b));
 router.get("/productCards", (req, res) => res.json(productCards));
 router.get("/supplierData", (req, res) => res.json(supplierData));
 router.get("/Bats", (req, res) => res.json(Bats));
+router.get("/recommendedSuppliers", (req, res) => res.json(recommendedSuppliers));
 router.get("/companyProfile", (req, res) => res.json(companyProfile));
 router.get("/productDetails", (req, res) => res.json(productDetails));
+router.get("/latestProducts", (req, res) => res.json(latestProducts));
 router.get("/statsSection", (req, res) => res.json(statsSection));
 router.get("/softwareReports", (req, res) => res.json(softwareReports));
 router.get("/softwareCards", (req, res) => res.json(softwareCards));
@@ -72,12 +78,20 @@ router.get("/BatsFlags", (req, res) => {
   res.json({ showBats: featureFlags.showBats });
 });
 
+router.get("/recommendedSuppliersFlags", (req, res) => {
+  res.json({ showRecommendedSuppliers: featureFlags.showRecommendedSuppliers });
+});
+
 router.get("/companyProfileFlags", (req, res) => {
   res.json({ showCompanyProfile: featureFlags.showCompanyProfile });
 });
 
 router.get("/productDetailsFlags", (req, res) => {
   res.json({ showProductDetails: featureFlags.showProductDetails });
+});
+
+router.get("/latestProductsFlags", (req, res) => {
+  res.json({ showLatestProducts: featureFlags.showLatestProducts });
 });
 
 router.get("/statsSectionFlags", (req, res) => {

@@ -245,6 +245,41 @@ export const Bats = [
   },
 ];
 
+export const recommendedSuppliers = [
+  {
+    id: 1,
+    name: "Jet Tech Private Limited",
+    description: "Jet Tech Pvt. Ltd. is a leading manufacturer and exporter of bulk packaging materials and industrial textiles.",
+    isVerified: true,
+    location: "Vadodara, Gujarat",
+    businessType: "B2B",
+    establishedYear: "1989",
+    followers: "98.9K",
+    products: "100+",
+    images: {
+      main: getEb2bPath("/products/HandBag1.png"),
+      small1: getEb2bPath("/products/HandBag2.png"),
+      small2: getEb2bPath("/products/HandBag3.png")
+    }
+  },
+  {
+    id: 2,
+    name: "Naike Group Co. Ltd.",
+    description: "Naike Group Co., Ltd. is a Chinese company specializing in manufacturing and exporting corporate promotional gifts and sustainable eco-friendly household products.",
+    isVerified: true,
+    location: "Fujian, China",
+    businessType: "B2B",
+    establishedYear: "2008",
+    followers: "109K",
+    products: "100+",
+    images: {
+      main: getEb2bPath("/products/Cream1.png"),
+      small1: getEb2bPath("/products/Cream2.png"),
+      small2: getEb2bPath("/products/Cream3.png")
+    }
+  }
+];
+
 export const companyProfile = {
   company: {
     name: "MRF",
@@ -315,6 +350,33 @@ export const productDetails = {
     { name: "PayPal", icon: "FaPaypal", enabled: true }
   ]
 };
+
+export const latestProducts = [
+  {
+    id: 1,
+    name: "Leather Ball",
+    price: "₹1,199",
+    desc: "Durable and high-quality leather ball designed for professional cricket play",
+    img: getEb2bPath("/products/leatherBall.png"),
+    qty: 2,
+  },
+  {
+    id: 2,
+    name: "Sony WH-720N",
+    price: "₹3,499",
+    desc: "High-quality headphones with noise cancellation",
+    img: getEb2bPath("/products/headPhones.png"),
+    qty: 2,
+  },
+  {
+    id: 3,
+    name: "E-sport Jersey",
+    price: "₹1,199",
+    desc: "Stylish gaming jersey for comfort & performance",
+    img: getEb2bPath("/products/esportsjersey.jpg"),
+    qty: 2,
+  },
+];
 
 export const statsSection = [
   {
