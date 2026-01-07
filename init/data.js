@@ -4,6 +4,7 @@ const getEb2bPath = (path) => `${IMAGEKIT_BASE_URL}/eB2BImages${path}`;
 const getSoftwarePath = (path) => `${IMAGEKIT_BASE_URL}/SoftwareHuntImages${path}`;
 const getAssociationPath = (path) => `${IMAGEKIT_BASE_URL}/AssociationImages${path}`;
 const getCapabilitiesPath = (path) => `${IMAGEKIT_BASE_URL}/CapabilitiesImages${path}`;
+const getContentPagePath = (path) => `${IMAGEKIT_BASE_URL}/ContentPageImages${path}`;
 
 
 export const partners = [
@@ -885,5 +886,43 @@ export const capabilityCards = [
     title: "Solution",
     desc: "Build and design a survey or form in no time with AI, start from scratch or use one of our 500+ templates.",
     img: getCapabilitiesPath("/Card3.jpg"),
+  },
+];
+
+export const researchData = [
+  {
+    id: 1,
+    image: getContentPagePath("/research1.jpg"),
+    date: "August 5, 2025",
+    title: "3 Key Insights to Optimize Your Media Planning",
+    description: "In today's rapidly evolving advertising landscape, precise planning is no longer a luxury—it's essential for success.",
+  },
+  {
+    id: 2,
+    image: getContentPagePath("/research2.jpg"),
+    date: "August 5, 2025",
+    title: "Unlocking Advertising Success in Southeast Asia",
+    description: "Discover the emerging advertising trends driving growth and innovation across Southeast Asian markets.",
+  },
+  {
+    id: 3,
+    image: getContentPagePath("/research3.jpg"),
+    date: "August 5, 2025",
+    title: "2025 Global Sports Research",
+    description: "How sports sponsorships and media deals are shaping global fan engagement strategies this year.",
+  },
+  {
+    id: 4,
+    image: getContentPagePath("/research4.jpg"),
+    date: "August 5, 2025",
+    title: "No. of Media Research about Covid-19 in India 2020",
+    description: "An in-depth look at how the pandemic reshaped media research and content trends across India.",
+  },
+  {
+    id: 5,
+    image: getContentPagePath("/research5.jpg"),
+    date: "November 5, 2025",
+    title: "India: Research on Violent Crime 1990–2023",
+    description: "Tracking the evolution of violent crime research in India and its influence on national policy.",
   },
 ];
