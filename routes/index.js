@@ -22,7 +22,8 @@ import {
   stateSection,
   associationProfile,
   aboutSection,
-  eventsSection
+  eventsSection,
+  capabilityCards,
 } from "../init/data.js";
 
 const router = express.Router();
@@ -50,6 +51,7 @@ const featureFlags = {
   showAssociationProfile: true,
   showAboutSection: true,
   showEventsSection: true,
+  showCapabilityCards: true,
 };
 
 // ============ DATA ENDPOINTS ============
@@ -76,6 +78,7 @@ router.get("/stateSection", (req, res) => res.json(stateSection));
 router.get("/associationProfile", (req, res) => res.json(associationProfile));
 router.get("/aboutSection", (req, res) => res.json(aboutSection));
 router.get("/eventsSection", (req, res) => res.json(eventsSection));
+router.get("/capabilityCards", (req, res) => res.json(capabilityCards));
 
 // ============ FLAG ENDPOINTS ============
 router.get("/bannerFlags", (req, res) => {
@@ -160,6 +163,10 @@ router.get("/aboutSectionFlags", (req, res) => {
 
 router.get("/eventsSectionFlags", (req, res) => {
   res.json({ showEventsSection: featureFlags.showEventsSection });
+});
+
+router.get("/capabilityCardsFlags", (req, res) => {
+  res.json({ showCapabilityCards: featureFlags.showCapabilityCards });
 });
 
 export default router;

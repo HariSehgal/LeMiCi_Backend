@@ -3,6 +3,8 @@ export const IMAGEKIT_BASE_URL = "https://ik.imagekit.io/lemiciiq/LeMiCi";
 const getEb2bPath = (path) => `${IMAGEKIT_BASE_URL}/eB2BImages${path}`;
 const getSoftwarePath = (path) => `${IMAGEKIT_BASE_URL}/SoftwareHuntImages${path}`;
 const getAssociationPath = (path) => `${IMAGEKIT_BASE_URL}/AssociationImages${path}`;
+const getCapabilitiesPath = (path) => `${IMAGEKIT_BASE_URL}/CapabilitiesImages${path}`;
+
 
 export const partners = [
   { name: "Adobe", image: getEb2bPath("/sponsors/Adobe.png") },
@@ -864,3 +866,24 @@ export const eventsSection = {
     },
   ]
 };
+
+export const capabilityCards = [
+  {
+    id: 1,
+    title: "Case Studies",
+    desc: "Build and design a survey or form in no time with AI, start from scratch or use one of our 500+ templates.",
+    img: getCapabilitiesPath("/Card1.jpg"),
+  },
+  {
+    id: 2,
+    title: "Our open ecosystem of alliances and acquisitions",
+    desc: "Build and design a survey or form in no time with AI, start from scratch or use one of our 500+ templates.",
+    img: getCapabilitiesPath("/Card2.jpg"),
+  },
+  {
+    id: 3,
+    title: "Solution",
+    desc: "Build and design a survey or form in no time with AI, start from scratch or use one of our 500+ templates.",
+    img: getCapabilitiesPath("/Card3.jpg"),
+  },
+];
