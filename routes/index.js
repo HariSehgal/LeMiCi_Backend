@@ -6,6 +6,7 @@ import {
   bannerEb2b,
   footerStatsEb2b,
   productCards,
+  supplierData,
   Bats,
   companyProfile,
   productDetails,
@@ -22,6 +23,7 @@ const featureFlags = {
   showFooterStats: true,
   showCategories: true,
   showProductCards: true,
+  showSuplierData: true,
   showBats: true,
   showCompanyProfile: true,
   showProductDetails: true,
@@ -37,6 +39,7 @@ router.get("/valueCards", (req, res) => res.json(valueCards));
 router.get("/bannerEb2b", (req, res) => res.json(bannerEb2b));
 router.get("/footerStatsEb2b", (req, res) => res.json(footerStatsEb2b));
 router.get("/productCards", (req, res) => res.json(productCards));
+router.get("/supplierData", (req, res) => res.json(supplierData));
 router.get("/Bats", (req, res) => res.json(Bats));
 router.get("/companyProfile", (req, res) => res.json(companyProfile));
 router.get("/productDetails", (req, res) => res.json(productDetails));
@@ -59,6 +62,10 @@ router.get("/exploreProductsFlags", (req, res) => {
 
 router.get("/productCardsFlags", (req, res) => {
   res.json({ showProductCards: featureFlags.showProductCards });
+});
+
+router.get("/supplierFlags", (req, res) => {
+  res.json({ showSuplierData: featureFlags.showSuplierData });
 });
 
 router.get("/BatsFlags", (req, res) => {
