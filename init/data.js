@@ -5,7 +5,7 @@ const getSoftwarePath = (path) => `${IMAGEKIT_BASE_URL}/SoftwareHuntImages${path
 const getAssociationPath = (path) => `${IMAGEKIT_BASE_URL}/AssociationImages${path}`;
 const getCapabilitiesPath = (path) => `${IMAGEKIT_BASE_URL}/CapabilitiesImages${path}`;
 const getContentPagePath = (path) => `${IMAGEKIT_BASE_URL}/ContentPageImages${path}`;
-
+const getDataProviderPath = (path) => `${IMAGEKIT_BASE_URL}/DataProviderImages${path}`;
 
 export const partners = [
   { name: "Adobe", image: getEb2bPath("/sponsors/Adobe.png") },
@@ -924,5 +924,204 @@ export const researchData = [
     date: "November 5, 2025",
     title: "India: Research on Violent Crime 1990–2023",
     description: "Tracking the evolution of violent crime research in India and its influence on national policy.",
+  },
+];
+
+export const productCategoriesDataProvider = [
+  { id: 1, name: "Geospatial Data", icon: "MdPermDataSetting" },
+  { id: 2, name: "Transaction Data", icon: "BsDatabaseFillLock" },
+  { id: 3, name: "HR Data", icon: "GoFileBinary" },
+  { id: 4, name: "Contact Data", icon: "MdOutlineCable" },
+  { id: 5, name: "Risk Data", icon: "LuSquareAsterisk" },
+  { id: 6, name: "Telecom Data", icon: "GiNetworkBars" },
+  { id: 7, name: "Industry Data", icon: "LiaIndustrySolid" },
+  { id: 8, name: "Weather Data", icon: "SiAccuweather" },
+  { id: 9, name: "Trade Data", icon: "FaExchangeAlt" },
+  { id: 10, name: "Financial Data", icon: "BsDatabase" },
+  { id: 11, name: "Energy Data", icon: "HiOutlineLightBulb" },
+  { id: 12, name: "Consumer Data", icon: "RiFileLine" },
+  { id: 13, name: "Healthcare Data", icon: "MdOutlineHealthAndSafety" },
+  { id: 14, name: "Legal Data", icon: "HiOutlineDocumentText" },
+  { id: 15, name: "Mobile App Data", icon: "FaMobileAlt" },
+  { id: 16, name: "Web Data", icon: "MdDataObject" },
+  { id: 17, name: "AI Training Data", icon: "GiArtificialHive" },
+  { id: 18, name: "B2B Data", icon: "LuMessageSquareText" },
+  { id: 19, name: "Environment Data", icon: "PiPottedPlantBold" },
+  { id: 20, name: "Real Estate Data", icon: "MdOutlineRealEstateAgent" },
+  { id: 21, name: "Automotive Data", icon: "BsGraphUp" },
+  { id: 22, name: "Population Data", icon: "BsFillPeopleFill" },
+  { id: 23, name: "Political Data", icon: "BsUiChecksGrid" },
+  { id: 24, name: "Hospitality Data", icon: "MdOutlineTravelExplore" },
+];
+
+export const popularDataCards = [
+  {
+    id: 1,
+    country: "United Kingdom",
+    status: "Actively raising",
+    name: "Factori",
+    followers: "123 Followers",
+    rating: 4.9,
+    price: "$5,000",
+    description:
+      "Our web data graph contains fresh web browsing data of users across that indicates search intent, purchase intent and online.",
+    accuracy: "Accuracy 75% to 85%",
+    update: "Update 2024",
+    tags: ["B2B", "Bundled", "Productivity", "Manufacturer"],
+    buttons: ["Company Type", "Source", "Usage", "Download"],
+    flagImage: getDataProviderPath("/ukflag.png"),
+    logoImage: getDataProviderPath("/cardlogo.jpg"),
+  },
+  {
+    id: 2,
+    country: "United Kingdom",
+    status: "Actively raising",
+    name: "Factori",
+    followers: "123 Followers",
+    rating: 4.9,
+    price: "$5,000",
+    description:
+      "Our web data graph contains fresh web browsing data of users across that indicates search intent, purchase intent and online.",
+    accuracy: "Accuracy 75% to 85%",
+    update: "Update 2024",
+    tags: ["B2B", "Bundled", "Productivity", "Manufacturer"],
+    buttons: ["Company Type", "Source", "Usage", "Download"],
+    flagImage: getDataProviderPath("/ukflag.png"),
+    logoImage: getDataProviderPath("/cardlogo.jpg"),
+  },
+  {
+    id: 3,
+    country: "United Kingdom",
+    status: "Actively raising",
+    name: "Factori",
+    followers: "123 Followers",
+    rating: 4.9,
+    price: "$5,000",
+    description:
+      "Our web data graph contains fresh web browsing data of users across that indicates search intent, purchase intent and online.",
+    accuracy: "Accuracy 75% to 85%",
+    update: "Update 2024",
+    tags: ["B2B", "Bundled", "Productivity", "Manufacturer"],
+    buttons: ["Company Type", "Source", "Usage", "Download"],
+    flagImage: getDataProviderPath("/ukflag.png"),
+    logoImage: getDataProviderPath("/cardlogo.jpg"),
+  },
+];
+
+export const surveyPlatformStats = {
+  orgsWorldwide: 260000,
+  users: 42000000,
+  dailyPredictions: 2400000,
+  reviews5Star: 20000,
+};
+
+export const industryCategories = [
+  { id: 1, name: "Dining Franchise", icon: "FaUtensils" },
+  { id: 2, name: "Business Franchise", icon: "FaBusinessTime" },
+  { id: 3, name: "Financial Franchise", icon: "FaDollarSign" },
+  { id: 4, name: "Cleaning Franchise", icon: "FaBroom" },
+  { id: 5, name: "Property Franchise", icon: "FaKey" },
+  { id: 6, name: "Learning Franchise", icon: "FaGraduationCap" },
+  { id: 7, name: "Health Franchise", icon: "FaHeartbeat" },
+  { id: 8, name: "Home Franchise", icon: "FaHome" },
+  { id: 9, name: "Services Franchise", icon: "FaTools" },
+  { id: 10, name: "Fitness Franchise", icon: "FaDumbbell" },
+  { id: 11, name: "Retail Franchise", icon: "FaShoppingBag" },
+  { id: 12, name: "Services Provider", icon: "FaCog" },
+  { id: 13, name: "Pet Franchise", icon: "FaDog" },
+  { id: 14, name: "Beauty Franchise", icon: "FaSpa" },
+  { id: 15, name: "Snack Franchise", icon: "FaHamburger" },
+  { id: 16, name: "Online Franchise", icon: "FaWifi" },
+  { id: 17, name: "Tech Franchise", icon: "FaLaptop" },
+  { id: 18, name: "Food Franchise", icon: "FaFish" },
+];
+
+export const footerStatsDataProvider = [
+  { id: 1, value: 4000, display: "+", label: "Businesses" },
+  { id: 2, value: 200, display: "K+", label: "Investors", highlighted: true },
+  { id: 3, value: 100, display: "+", label: "Industries" },
+  { id: 4, value: 20, display: "k+", label: "Investment size" },
+];
+
+export const statesData = [
+  {
+    id: 1,
+    name: "Andhra Pradesh",
+    mapImage: getDataProviderPath("/APmap.png"),
+    description:
+      "Andhra Pradesh is the second largest producer of cotton and raw silk in India. The state has a strong textile industry base consisting of handlooms, handicrafts, spinning, and processing units. The state has integrated apparel city in Vizag with an innovative concept of 'Fibre to score'. The government is providing many initiatives for the textile sector such as offering land for establishing textile and apparel parks, training programs, etc. The state has a good number of textile industries in the districts of Guntur, Chittoor, Kadapa, and Kurnool.",
+    stats: [
+      { label: "Projects Completed", value: "15+" },
+      { label: "Data Completed", value: "20+" },
+    ],
+  },
+  {
+    id: 2,
+    name: "Gujarat",
+    mapImage: getDataProviderPath("/APmap.png"),
+    description: "",
+    stats: [],
+  },
+  {
+    id: 3,
+    name: "Karnataka",
+    mapImage: getDataProviderPath("/APmap.png"),
+    description: "",
+    stats: [],
+  },
+  {
+    id: 4,
+    name: "Maharastra",
+    mapImage: getDataProviderPath("/APmap.png"),
+    description: "",
+    stats: [],
+  },
+  {
+    id: 5,
+    name: "Telangana",
+    mapImage: getDataProviderPath("/APmap.png"),
+    description: "",
+    stats: [],
+  },
+  {
+    id: 6,
+    name: "Uttar Pradesh",
+    mapImage: getDataProviderPath("/APmap.png"),
+    description: "",
+    stats: [],
+  },
+  {
+    id: 7,
+    name: "Tamil Nadu",
+    mapImage: getDataProviderPath("/APmap.png"),
+    description: "",
+    stats: [],
+  },
+];
+
+export const categoryFranchiseProducts = [
+  {
+    id: 1,
+    logo: getDataProviderPath("/successAI.jpg"),
+    name: "Success.ai",
+    description:
+      "Success.ai | B2B Company & Company Data - 28M Verified | Company Profiles Global | Best Price Guarantee & 99% Data Accuracy",
+    location: "UK, USA, Germany",
+  },
+  {
+    id: 2,
+    logo: getDataProviderPath("/salutary.jpg"),
+    name: "Salutary Data",
+    description:
+      "Company Data | 6.7M+ Total Companies | Company Name, Industry, Employees, Revenue, Website, Address +More",
+    location: "Lexington, USA",
+  },
+  {
+    id: 3,
+    logo: getDataProviderPath("/coreSignal.jpg"),
+    name: "CoreSignal",
+    description:
+      "Coresignal | Company Data | Firmographic Data | Global 120M+ Records | Largest Professional Network | +Owler +9 Other Sources",
+    location: "UK, USA, Germany",
   },
 ];

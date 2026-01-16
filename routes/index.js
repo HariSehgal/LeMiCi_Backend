@@ -25,6 +25,13 @@ import {
   eventsSection,
   capabilityCards,
   researchData,
+  productCategoriesDataProvider,
+  popularDataCards,
+  surveyPlatformStats,
+  industryCategories,
+  footerStatsDataProvider,
+  statesData,
+  categoryFranchiseProducts,
 } from "../init/data.js";
 
 const router = express.Router();
@@ -54,6 +61,13 @@ const featureFlags = {
   showEventsSection: true,
   showCapabilityCards: true,
   showResearchData: true,
+  showProductCategoriesDataProvider: true,
+  showPopularData: true,
+  showSurveyPlatform: true,
+  showIndustryCategories: true,
+  showFooterStatsDataProvider: true,
+  showStatesData: true,
+  showCategoryFranchiseProducts: true,
 };
 
 // ============ DATA ENDPOINTS ============
@@ -82,6 +96,13 @@ router.get("/aboutSection", (req, res) => res.json(aboutSection));
 router.get("/eventsSection", (req, res) => res.json(eventsSection));
 router.get("/capabilityCards", (req, res) => res.json(capabilityCards));
 router.get("/researchData", (req, res) => res.json(researchData));
+router.get("/productCategoriesDataProvider", (req, res) => res.json(productCategoriesDataProvider));
+router.get("/popularData", (req, res) => { res.json(popularDataCards) });
+router.get("/surveyPlatformStats", (req, res) => { res.json(surveyPlatformStats) });
+router.get("/industryCategories", (req, res) => { res.json(industryCategories) });
+router.get("/footerStatsDataProvider", (req, res) => { res.json(footerStatsDataProvider) });
+router.get("/statesData", (req, res) => { res.json(statesData) });
+router.get("/categoryFranchiseProducts", (req, res) => { res.json(categoryFranchiseProducts) });
 
 // ============ FLAG ENDPOINTS ============
 router.get("/bannerFlags", (req, res) => {
@@ -174,6 +195,34 @@ router.get("/capabilityCardsFlags", (req, res) => {
 
 router.get("/researchDataFlags", (req, res) => {
   res.json({ showResearchData: featureFlags.showResearchData });
+});
+
+router.get("/productCategoriesDataProviderFlags", (req, res) => {
+  res.json({ showProductCategoriesDataProvider: featureFlags.showProductCategoriesDataProvider });
+});
+
+router.get("/popularDataFlags", (req, res) => {
+  res.json({ showPopularData: featureFlags.showPopularData });
+});
+
+router.get("/surveyPlatformFlags", (req, res) => {
+  res.json({ showSurveyPlatform: featureFlags.showSurveyPlatform });
+});
+
+router.get("/industryCategoriesFlags", (req, res) => {
+  res.json({ showIndustryCategories: featureFlags.showIndustryCategories });
+});
+
+router.get("/footerStatsDataProviderFlags", (req, res) => {
+  res.json({ showFooterStatsDataProvider: featureFlags.showFooterStatsDataProvider });
+});
+
+router.get("/statesDataFlags", (req, res) => {
+  res.json({ showStatesData: featureFlags.showStatesData });
+});
+
+router.get("/categoryFranchiseProductsFlags", (req, res) => {
+  res.json({ showCategoryFranchiseProducts: featureFlags.showCategoryFranchiseProducts });
 });
 
 export default router;
