@@ -34,6 +34,9 @@ import {
   categoryFranchiseProducts,
   connectCardsData,
   footerStatsExpertConnect,
+  industryHeaderData,
+  industryOverviewData,
+  startupsAndEventsData,
 } from "../init/data.js";
 
 const router = express.Router();
@@ -72,6 +75,9 @@ const featureFlags = {
   showCategoryFranchiseProducts: true,
   showConnectCards: true,
   showFooterStatsExpertConnect: true,
+  showIndustryHeader: true,
+  showIndustryOverview: true,
+  showStartupsAndEvents: true,
 };
 
 // ============ DATA ENDPOINTS ============
@@ -109,6 +115,9 @@ router.get("/statesData", (req, res) => { res.json(statesData) });
 router.get("/categoryFranchiseProducts", (req, res) => { res.json(categoryFranchiseProducts) });
 router.get("/connectCards", (req, res) => { res.json(connectCardsData) });
 router.get("/footerStatsExpertConnect", (req, res) => { res.json(footerStatsExpertConnect) });
+router.get("/industryHeader", (req, res) => { res.json(industryHeaderData) });
+router.get("/industryOverview", (req, res) => { res.json(industryOverviewData) });
+router.get("/startupsAndEvents", (req, res) => {res.json(startupsAndEventsData) });
 
 // ============ FLAG ENDPOINTS ============
 router.get("/bannerFlags", (req, res) => {
@@ -237,6 +246,18 @@ router.get("/connectCardsFlags", (req, res) => {
 
 router.get("/footerStatsExpertConnectFlags", (req, res) => {
   res.json({ showFooterStatsExpertConnect: featureFlags.showFooterStatsExpertConnect });
+});
+
+router.get("/industryHeaderFlags", (req, res) => {
+  res.json({ showIndustryHeader: featureFlags.showIndustryHeader });
+});
+
+router.get("/industryOverviewFlags", (req, res) => {
+  res.json({ showIndustryOverview: featureFlags.showIndustryOverview });
+});
+
+router.get("/startupsAndEventsFlags", (req, res) => {
+  res.json({ showStartupsAndEvents: featureFlags.showStartupsAndEvents });
 });
 
 export default router;

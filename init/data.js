@@ -7,6 +7,7 @@ const getCapabilitiesPath = (path) => `${IMAGEKIT_BASE_URL}/CapabilitiesImages${
 const getContentPagePath = (path) => `${IMAGEKIT_BASE_URL}/ContentPageImages${path}`;
 const getDataProviderPath = (path) => `${IMAGEKIT_BASE_URL}/DataProviderImages${path}`;
 const getExpertConnectPath = (path) => `${IMAGEKIT_BASE_URL}/ExpertConnectImages${path}`;
+const getGolfBallProfilePath = (path) => `${IMAGEKIT_BASE_URL}/GolfBallProfileImages${path}`;
 
 export const partners = [
   { name: "Adobe", image: getEb2bPath("/sponsors/Adobe.png") },
@@ -1216,3 +1217,159 @@ export const footerStatsExpertConnect = [
   { id: 3, value: 100, display: "+", label: "Industries" },
   { id: 4, value: 20, display: "k+", label: "Investments" },
 ];
+
+export const industryHeaderData = {
+  logo: getGolfBallProfilePath("/golf-ball-logo.png"),
+  name: "Golf Ball Manufacturing Industry",
+  verified: true,
+  tags: ["Manufacturing", "Sports Goods", "SME", "Sector", "MSME", "Median Growth"],
+  description: "The golf ball manufacturing industry involves the design, production, and distribution of golf balls used in the sport of golf. This sector typically includes MSMEs and SMEs engaged in molding, core formation, and coating processes using materials such as rubber, resin, or thermoplastics. The industry caters to both domestic and export markets, supported by government schemes under sports goods manufacturing and innovation in India.",
+  rating: 4,
+  likes: 107,
+  socialMedia: {
+    youtube: getGolfBallProfilePath("/youtube-logo.png"),
+    facebook: getGolfBallProfilePath("/facebook-logo.png"),
+    instagram: getGolfBallProfilePath("/insta-logo.png"),
+    twitter: getGolfBallProfilePath("/x-logo.png"),
+    pinterest: getGolfBallProfilePath("/pintrest-logo.png")
+  },
+  profileImage: getGolfBallProfilePath("/profile-girl.jpg"),
+  icons: {
+    share: getGolfBallProfilePath("/share.png"),
+    book: getGolfBallProfilePath("/book.png"),
+    menu: getGolfBallProfilePath("/menu.png"),
+    blueTick: getGolfBallProfilePath("/blue-tick.png"),
+    caller: getGolfBallProfilePath("/caller.png")
+  }
+};
+
+export const industryOverviewData = {
+  marketData: {
+    currentVolume: {
+      title: "Current Market Volume",
+      value: "Not publicly disclosed",
+      bgColor: "bg-white",
+      textColor: "text-gray-700"
+    },
+    currentSize: {
+      title: "Current Market Size",
+      value: "~USD 268.0 million",
+      bgColor: "bg-[#00445E]",
+      textColor: "text-white"
+    },
+    cagrRate: {
+      title: "CAGR Rate",
+      period: "(2025-2033)",
+      value: "4.0%",
+      bgColor: "bg-white",
+      textColor: "text-gray-700",
+      hasIcon: true,
+      icon: getGolfBallProfilePath("/arrow-up.png")
+    },
+    forecastedSize: {
+      title: "Forecasted Market Size",
+      value: "USD 381.5 million by 2033",
+      bgColor: "bg-[#00445E]",
+      textColor: "text-white"
+    },
+    forecastedVolume: {
+      title: "Forecasted Market Volume",
+      value: "Not published",
+      bgColor: "bg-white",
+      textColor: "text-gray-700"
+    }
+  },
+  economicIndicators: [
+    {
+      title: "GDP Contribution",
+      mainValue: "~0.001% - 0.005%",
+      subValue: "₹300 - ₹1,200 Crore/Year",
+      bgColor: "bg-white"
+    },
+    {
+      title: "Export",
+      mainValue: "₹30 Crore/Year",
+      subValue: "~0.01% Of India's Total Exports",
+      bgColor: "bg-white"
+    },
+    {
+      title: "Import",
+      mainValue: "₹60 Crore/Year",
+      subValue: "~0.02-0.03% import share",
+      bgColor: "bg-white"
+    },
+    {
+      title: "Indirect Employment",
+      mainValue: "~6,000 People",
+      subValue: "~0.006% Of Workforce",
+      bgColor: "bg-white"
+    },
+    {
+      title: "Direct Employment",
+      mainValue: "~2,000 People",
+      subValue: "~0.002% Of India's Workforce",
+      bgColor: "bg-white"
+    },
+    {
+      title: "FDI Inflow",
+      mainValue: "<0.001% Minimal",
+      subValue: "No Dedicated Inflows",
+      bgColor: "bg-white"
+    }
+  ],
+  regulatoryInfo: {
+    ministry: "Ministry Of Micro, Small & Medium Enterprises / Ministry Of Commerce & Industry",
+    department: "Department For Promotion Of Industry And Internal Trade (DPIIT)",
+    classificationCodes: [
+      { label: "NIC", value: "3230" },
+      { label: "NIP", value: "222019" },
+      { label: "HSN", value: "9506" }
+    ]
+  }
+};
+
+export const startupsAndEventsData = {
+  startups: {
+    headerImage: getGolfBallProfilePath("/golf-smile.png"),
+    title: "Startups in Golf Industry",
+    subtitle: "Driving Innovation & Growth",
+    companies: {
+      description: "~15-20 early-stage golf-focused startups",
+      investment: "₹25-30 Cr+ cumulatively"
+    },
+    technology: "AI-enabled golf simulators (XGolf India), e-commerce platforms, swing analytics apps",
+    research: "Golf simulator optimization- Lightweight polymer balls- Golf biomechanics in training- Ball spin rate and core aerodynamics (limited to academic sports research)"
+  },
+  event: {
+    logo: getGolfBallProfilePath("/event-logo.png"),
+    name: "INDUS Tech Expo 2025",
+    verified: true,
+    verifiedIcon: getGolfBallProfilePath("/blue-tick.png"),
+    location: "Aravali Vihar Ground, Bhiwadi, India",
+    description: "INDUS-Tech Expo stands as one of the most renowned and comprehensive platforms for showcasing cutting-edge machine tools and automation technologies.",
+    categories: ["B2B", "Manufacturing", "Apparel & Clothing", "Packing & Packaging"],
+    details: {
+      date: {
+        icon: getGolfBallProfilePath("/calendar-icon.png"),
+        label: "Date",
+        value: "Fri,Oct 3 - Sun,Oct 5, 2025"
+      },
+      time: {
+        icon: getGolfBallProfilePath("/clock-icon.png"),
+        label: "Time",
+        value: "10:00 AM - 06:00 PM"
+      },
+      entryFee: {
+        icon: getGolfBallProfilePath("/rupee-icon.png"),
+        label: "Entry Fee",
+        value: "INR 899"
+      }
+    },
+    actionIcons: {
+      star: getGolfBallProfilePath("/star-icon.png"),
+      bookmark: getGolfBallProfilePath("/bookmark-icon.png"),
+      share: getGolfBallProfilePath("/share-icon.png"),
+      expand: getGolfBallProfilePath("/expand-icon.png")
+    }
+  }
+};
