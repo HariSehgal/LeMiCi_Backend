@@ -37,6 +37,7 @@ import {
   industryHeaderData,
   industryOverviewData,
   startupsAndEventsData,
+  businessOpportunitiesData,
 } from "../init/data.js";
 
 const router = express.Router();
@@ -78,6 +79,7 @@ const featureFlags = {
   showIndustryHeader: true,
   showIndustryOverview: true,
   showStartupsAndEvents: true,
+  showBusinessOpportunities: true,
 };
 
 // ============ DATA ENDPOINTS ============
@@ -117,7 +119,10 @@ router.get("/connectCards", (req, res) => { res.json(connectCardsData) });
 router.get("/footerStatsExpertConnect", (req, res) => { res.json(footerStatsExpertConnect) });
 router.get("/industryHeader", (req, res) => { res.json(industryHeaderData) });
 router.get("/industryOverview", (req, res) => { res.json(industryOverviewData) });
-router.get("/startupsAndEvents", (req, res) => {res.json(startupsAndEventsData) });
+router.get("/startupsAndEvents", (req, res) => { res.json(startupsAndEventsData) });
+router.get("/businessOpportunities", (req, res) => { res.json(businessOpportunitiesData) });
+
+
 
 // ============ FLAG ENDPOINTS ============
 router.get("/bannerFlags", (req, res) => {
@@ -258,6 +263,10 @@ router.get("/industryOverviewFlags", (req, res) => {
 
 router.get("/startupsAndEventsFlags", (req, res) => {
   res.json({ showStartupsAndEvents: featureFlags.showStartupsAndEvents });
+});
+
+router.get("/businessOpportunitiesFlags", (req, res) => {
+  res.json({ showBusinessOpportunities: featureFlags.showBusinessOpportunities });
 });
 
 export default router;

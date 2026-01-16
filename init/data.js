@@ -8,6 +8,8 @@ const getContentPagePath = (path) => `${IMAGEKIT_BASE_URL}/ContentPageImages${pa
 const getDataProviderPath = (path) => `${IMAGEKIT_BASE_URL}/DataProviderImages${path}`;
 const getExpertConnectPath = (path) => `${IMAGEKIT_BASE_URL}/ExpertConnectImages${path}`;
 const getGolfBallProfilePath = (path) => `${IMAGEKIT_BASE_URL}/GolfBallProfileImages${path}`;
+const getListingWithUsPath = (path) => `${IMAGEKIT_BASE_URL}/ListingWithUsImages${path}`;
+
 
 export const partners = [
   { name: "Adobe", image: getEb2bPath("/sponsors/Adobe.png") },
@@ -1372,4 +1374,28 @@ export const startupsAndEventsData = {
       expand: getGolfBallProfilePath("/expand-icon.png")
     }
   }
+};
+
+export const businessOpportunitiesData = {
+  mainImage: getListingWithUsPath("/businessOpp.png"),
+  title: {
+    beforeHighlight: "Sell Your",
+    highlighted: "Business Opportunities",
+    afterHighlight: "to Millions"
+  },
+  description: "Connect with entrepreneurs, investors, and business seekers across India. List your franchises, software, events, and startup opportunities on India's fastest-growing business platform.",
+  buttonText: "Start Selling",
+  stats: [
+    { value: "50K+", label: "Active Buyers" },
+    { value: "2.5M+", label: "Monthly Visitors" },
+    { value: "₹500Cr+", label: "Deals Facilitated" },
+    { value: "98%", label: "Success Rate" },
+  ],
+  tags: [
+    { text: "StartupZone Listed", top: "10%", left: "70%" },
+    { text: "B2B Marketplace Listed", top: "25%", left: "20%" },
+    { text: "Software Hunt Listed", top: "40%", left: "60%" },
+    { text: "Franchise Listed", top: "65%", left: "20%" },
+    { text: "B2B Events Listed", top: "75%", left: "73%" },
+  ]
 };
