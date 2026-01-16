@@ -6,6 +6,7 @@ const getAssociationPath = (path) => `${IMAGEKIT_BASE_URL}/AssociationImages${pa
 const getCapabilitiesPath = (path) => `${IMAGEKIT_BASE_URL}/CapabilitiesImages${path}`;
 const getContentPagePath = (path) => `${IMAGEKIT_BASE_URL}/ContentPageImages${path}`;
 const getDataProviderPath = (path) => `${IMAGEKIT_BASE_URL}/DataProviderImages${path}`;
+const getExpertConnectPath = (path) => `${IMAGEKIT_BASE_URL}/ExpertConnectImages${path}`;
 
 export const partners = [
   { name: "Adobe", image: getEb2bPath("/sponsors/Adobe.png") },
@@ -1124,4 +1125,94 @@ export const categoryFranchiseProducts = [
       "Coresignal | Company Data | Firmographic Data | Global 120M+ Records | Largest Professional Network | +Owler +9 Other Sources",
     location: "UK, USA, Germany",
   },
+];
+
+export const connectCardsData = [
+  {
+    id: 1,
+    profileImage: getExpertConnectPath("/people/connectperson.jpg"),
+    name: "Maria Elliott",
+    verified: true,
+    title: "Tech lead, Ogilvy Infinity Learn",
+    rating: 4,
+    bio: "Experienced tech lead specializing in small companies' growth and software development.",
+    location: "New York, NY",
+    availability: "Available Mon-Fri",
+    industries: "EdTech, AI/ML, Productivity, HR",
+    hoursContributed: "43,824 h",
+    hoursPercentage: 66,
+    offerings: [
+      { icon: "FaChalkboardTeacher", label: "Training" },
+      { icon: "FaBrain", label: "Consulting" },
+      { icon: "FaTh", label: "Research analysis" }
+    ],
+    skills: {
+      technical: [
+        "Strong programming skills",
+        "System architecture",
+        "DevOps & CI/CD",
+        "Tools & Framework",
+        "Code quality & reviews",
+      ],
+      leadership: [
+        "Mentorship",
+        "Delegation",
+        "Decision making",
+        "Project management"
+      ],
+      communication: [
+        "Cross team collaboration",
+        "Clear technical writing",
+        "Conflict resolution",
+        "Stakeholder communication",
+      ],
+    },
+  },
+  {
+    id: 2,
+    profileImage: getExpertConnectPath("/people/connectperson.jpg"),
+    name: "Maria Elliott",
+    verified: true,
+    title: "Tech lead, Ogilvy Infinity Learn",
+    rating: 4,
+    bio: "Experienced tech lead specializing in small companies' growth and software development.",
+    location: "New York, NY",
+    availability: "Available Mon-Fri",
+    industries: "EdTech, AI/ML, Productivity, HR",
+    hoursContributed: "43,824 h",
+    hoursPercentage: 66,
+    offerings: [
+      { icon: "FaChalkboardTeacher", label: "Training" },
+      { icon: "FaBrain", label: "Consulting" },
+      { icon: "FaTh", label: "Research analysis" }
+    ],
+    skills: {
+      technical: [
+        "Strong programming skills",
+        "System architecture",
+        "DevOps & CI/CD",
+        "Tools & Framework",
+        "Code quality & reviews",
+      ],
+      leadership: [
+        "Mentorship",
+        "Delegation",
+        "Decision making",
+        "Project management"
+      ],
+      communication: [
+        "Cross team collaboration",
+        "Clear technical writing",
+        "Conflict resolution",
+        "Stakeholder communication",
+      ],
+    },
+  },
+];
+
+export const footerStatsExpertConnect = [
+  { id: 1, value: 4000, display: " +", label: "Businesses" },
+  { id: 2, value: 200, display: " K+", label: "Investors", highlighted: true },
+  { id: 3, value: 100, display: "+", label: "Industries" },
+  { id: 4, value: 20, display: "k+", label: "Investments" },
 ];
