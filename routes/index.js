@@ -15,6 +15,7 @@ import {
   statsSection,
   softwareReports,
   softwareCards,
+  popularCRMData,
   featuredAssociations,
   footerStatsFeatAssoc,
   associationCards,
@@ -57,6 +58,8 @@ const featureFlags = {
   showStatsSection: true,
   showSoftwareReports: true,
   showSoftwareCards: true,
+  showPopularCRM: true,
+
   showFeaturedAssociations: true,
   showFooterStatsFeatAssoc: true,
   showAssociationCards: true,
@@ -121,7 +124,7 @@ router.get("/industryHeader", (req, res) => { res.json(industryHeaderData) });
 router.get("/industryOverview", (req, res) => { res.json(industryOverviewData) });
 router.get("/startupsAndEvents", (req, res) => { res.json(startupsAndEventsData) });
 router.get("/businessOpportunities", (req, res) => { res.json(businessOpportunitiesData) });
-
+router.get("/popularCRM", (req, res) => { res.json(popularCRMData) });
 
 
 // ============ FLAG ENDPOINTS ============
@@ -267,6 +270,10 @@ router.get("/startupsAndEventsFlags", (req, res) => {
 
 router.get("/businessOpportunitiesFlags", (req, res) => {
   res.json({ showBusinessOpportunities: featureFlags.showBusinessOpportunities });
+});
+
+router.get("/popularCRMFlags", (req, res) => {
+  res.json({ showPopularCRM: featureFlags.showPopularCRM });
 });
 
 export default router;
